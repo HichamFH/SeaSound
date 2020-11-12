@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Laila');
+
+
+body{
+    margin: 0;
+    padding: 0px;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container{
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+.container #back-image .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.container #back-image {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container #back-image #playerzone{
+    
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.container #back-image #playerzone i{
+    color: #FFFFFF;
+    font-size: 20vh;
+    cursor: pointer;
+}
+
+.container #back-image #title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.container #back-image #title h1 {
+    color: #FFFFFF;
+    font-family: 'Laila', serif;
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container #back-image #title h3{
+    color: #FFFFFF;
+    font-family: 'Laila', serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container #back-image #pub{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.container #back-image #pub span {
+    color: #FFFFFF;
+    font-family: 'Laila', serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#social{
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+#social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#social ul li {
+    margin-left: 10px;
+}
+#social ul li i {
+    color: #ffffff6e;
+    font-size: 30px;
+    padding: 6px;
+}
+#social ul li i:hover{
+    color: #2980b9;
+    transition: 2s;
+}
+
+#pause {
+  
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+#leftSide{
+    position: absolute;
+    top: 40%;
+    left: 0%;
+}
+#leftSide ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#leftSide ul li i {
+    color: #ffffff47;
+    font-size: 20px;
+    border: 1px solid #ffffff40;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+#btnScroll{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+#btnScroll a{
+    text-decoration: none;
+}
+#btnScroll a i {
+    font-size: 30px;;
+    color: #FFFFFF;
+}
+
+
+@media only screen 
+and (min-width: 320px) 
+and (max-width: 768px) 
+ {
+    .container #back-image #playerzone i{
+        color: #FFFFFF;
+        font-size: 16vh;
+        cursor: pointer;
+    }
+    .container #back-image #title h1 {
+        font-size: 30px;
+    }
+    .container #back-image #title h3{
+        font-size: 14px;
+    }
+    #social ul li i{
+        font-size: 25px;
+    }
+    #leftSide {
+        visibility: hidden;
+    }
+    .container #back-image #pub span{
+        font-size: 8px;
+    }
+    #social{
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+    #btnScroll a i {
+        font-size: 25px;;
+        color: #FFFFFF;
+    }
+}
+@media only screen 
+and (min-width: 732px) 
+and (max-width: 1200px) 
+{
+    .container{
+        background-color: #0f0c29;
+    }
+}
+
+
+
+/*MEDIA QUERY DEVICE IPHONE 6, 7 , 8*/
+/*
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+    .container #back-image #playerzone i{
+        color: #FFFFFF;
+        font-size: 20vh;
+        cursor: pointer;
+    }
+    .container #back-image #title h1 {
+        font-size: 30px;
+    }
+    .container #back-image #title h3{
+        font-size: 14px;
+    }
+    #social ul li i{
+        font-size: 18px;
+    }
+    #leftSide {
+        visibility: hidden;
+    }
+    .container #back-image #pub span{
+        font-size: 8px;
+    }
+    #social{
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+    #btnScroll a i {
+        font-size: 20px;;
+        color: #FFFFFF;
+    }
+ }
+*/
+ /*Boxes -- Footer*/
+
+ #footer{
+    box-shadow: 20px 20px 20px black;
+    height: 100vh;
+    width: 100vw;
+    background-color:#e0d6d6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 20px;
+    grid-column-gap: 25px;
+    grid-template-rows: 480px;
+}
+#footer .box {
+    position: relative;
+    background-color: #cccccc;
+    transition: .5s;
+   /* overflow: hidden;*/
+    margin: 100px auto;
+    height: 60vh;
+    width: 60vh;
+    box-shadow: 2px 2px 12px #cccccc;
+}
+#footer .box #img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px #4e4242;
+
+}
+
+#footer .box:hover #img-box{
+    opacity: .5;
+    cursor: pointer;
+}
+
